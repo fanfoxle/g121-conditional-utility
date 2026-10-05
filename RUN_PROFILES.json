@@ -1,0 +1,295 @@
+{
+  "status": "release_review_metadata_not_executable_design_receipt",
+  "profiles": {
+    "CF12": {
+      "protocol_id": "q1-w259-cf12-v1",
+      "scientific_identity_sha256": "444f639ed884df8abf04ba412269cdaa9b00ae007e00f05b1e3a30153ad52057",
+      "source_freeze_sha256": "654e4d2ff0f456412cac1a2e498522ae6d308d802755e242104211e52399694b",
+      "contexts": [
+        {
+          "context_id": "C01",
+          "init_seed": 1231984934,
+          "root": 1949682730
+        },
+        {
+          "context_id": "C02",
+          "init_seed": 1090117941,
+          "root": 428520154
+        },
+        {
+          "context_id": "C03",
+          "init_seed": 967375870,
+          "root": 1776309571
+        },
+        {
+          "context_id": "C04",
+          "init_seed": 699328526,
+          "root": 1608501774
+        },
+        {
+          "context_id": "C05",
+          "init_seed": 2040126930,
+          "root": 1468151469
+        },
+        {
+          "context_id": "C06",
+          "init_seed": 1554592672,
+          "root": 810130694
+        },
+        {
+          "context_id": "C07",
+          "init_seed": 1460147005,
+          "root": 313125566
+        },
+        {
+          "context_id": "C08",
+          "init_seed": 1883910210,
+          "root": 1042225928
+        },
+        {
+          "context_id": "C09",
+          "init_seed": 1614606207,
+          "root": 1504801076
+        },
+        {
+          "context_id": "C10",
+          "init_seed": 473116210,
+          "root": 1069011632
+        },
+        {
+          "context_id": "C11",
+          "init_seed": 982966712,
+          "root": 1746621640
+        },
+        {
+          "context_id": "C12",
+          "init_seed": 699503101,
+          "root": 802365995
+        }
+      ],
+      "effective_concurrency": {
+        "generation": 4,
+        "score": 4,
+        "train": 2
+      },
+      "wall_cap_seconds": 237600,
+      "gpu_cap_seconds": 194400,
+      "training_recipe": {
+        "context_initialization": "one persisted fresh LoRA state shared by four arms",
+        "lora_alpha": 32,
+        "lora_dropout": 0.05,
+        "lora_rank": 16,
+        "max_length": 2048,
+        "optimizer": "fresh empty optimizer per arm",
+        "updates": 100
+      },
+      "generation_recipe": {
+        "do_sample": false,
+        "endpoint": "HumanEval+164 exact",
+        "max_new_tokens": 1024
+      },
+      "software_versions": {
+        "numpy": "2.1.2",
+        "peft": "0.18.1",
+        "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+        "torch": "2.9.1+cu130",
+        "transformers": "5.3.0"
+      },
+      "bindings": {
+        "design_receipt_sha256": "43fcb24b64758f0799802dad2471f7178b561469ae1e4d120fd3eef52d69b2fe",
+        "design_sha256": "866ea162f2afca6e0e76dd5c40a3bcd6cafeda04118ba9c58f88e6f3a9847a03",
+        "evaluator_archive_sha256": "d11dc64dfee6858a52c493466aa91a7bd0e3d50deda9a586144c1ba127c0e869",
+        "evaluator_revision": "26d6d00bb1fd0fa37f39c99d5290da67891d1c5e",
+        "humaneval_compressed_sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+        "humaneval_logical_sha256": "42526ec0e7d5f3ee0b06d6ced98f8c8bae3d76519151bfb3d36f79010645bd7f",
+        "model_revision": "8faed761d45a263340a0528343f099c05c9a4323"
+      }
+    },
+    "R16": {
+      "protocol_id": "Q1-G121-FIXED-REPLICATION-16-v1",
+      "scientific_identity_sha256": "33590557862843a0eb4828f10c99f4370c57004e21a6672a2f81bb9977ade5ee",
+      "source_freeze_sha256": "f959f922ff02e4fa70091df83b16a051c27f250b777f593c94195279ac62e415",
+      "contexts": [
+        {
+          "context_id": "R01",
+          "pair_id": "R01",
+          "init_seed": 869608637,
+          "root": 593432222,
+          "first_arm": "B"
+        },
+        {
+          "context_id": "R02",
+          "pair_id": "R02",
+          "init_seed": 1279507270,
+          "root": 1836449280,
+          "first_arm": "BG"
+        },
+        {
+          "context_id": "R03",
+          "pair_id": "R03",
+          "init_seed": 1234312639,
+          "root": 2101019284,
+          "first_arm": "B"
+        },
+        {
+          "context_id": "R04",
+          "pair_id": "R04",
+          "init_seed": 1633139739,
+          "root": 1497437317,
+          "first_arm": "B"
+        },
+        {
+          "context_id": "R05",
+          "pair_id": "R05",
+          "init_seed": 2037286214,
+          "root": 1520334262,
+          "first_arm": "BG"
+        },
+        {
+          "context_id": "R06",
+          "pair_id": "R06",
+          "init_seed": 1721239993,
+          "root": 846567278,
+          "first_arm": "BG"
+        },
+        {
+          "context_id": "R07",
+          "pair_id": "R07",
+          "init_seed": 1605070216,
+          "root": 1916703856,
+          "first_arm": "BG"
+        },
+        {
+          "context_id": "R08",
+          "pair_id": "R08",
+          "init_seed": 756240299,
+          "root": 2129018034,
+          "first_arm": "B"
+        },
+        {
+          "context_id": "R09",
+          "pair_id": "R09",
+          "init_seed": 1043636669,
+          "root": 1397386813,
+          "first_arm": "BG"
+        },
+        {
+          "context_id": "R10",
+          "pair_id": "R10",
+          "init_seed": 1404651429,
+          "root": 63493742,
+          "first_arm": "BG"
+        },
+        {
+          "context_id": "R11",
+          "pair_id": "R11",
+          "init_seed": 844342675,
+          "root": 527969338,
+          "first_arm": "BG"
+        },
+        {
+          "context_id": "R12",
+          "pair_id": "R12",
+          "init_seed": 1350666101,
+          "root": 1003325519,
+          "first_arm": "B"
+        },
+        {
+          "context_id": "R13",
+          "pair_id": "R13",
+          "init_seed": 211137427,
+          "root": 1270161896,
+          "first_arm": "B"
+        },
+        {
+          "context_id": "R14",
+          "pair_id": "R14",
+          "init_seed": 1576791405,
+          "root": 980042020,
+          "first_arm": "B"
+        },
+        {
+          "context_id": "R15",
+          "pair_id": "R15",
+          "init_seed": 237483826,
+          "root": 2140655727,
+          "first_arm": "BG"
+        },
+        {
+          "context_id": "R16",
+          "pair_id": "R16",
+          "init_seed": 428690778,
+          "root": 1957612152,
+          "first_arm": "B"
+        }
+      ],
+      "effective_concurrency": {
+        "generation": 4,
+        "score": 4,
+        "train": 2
+      },
+      "wall_cap_seconds": 180000,
+      "gpu_cap_seconds": 165600,
+      "inherited_actual_recipe": {
+        "generation": {
+          "eos_pad": 151643,
+          "greedy": true,
+          "max_new_tokens": 1024,
+          "microbatch": 1,
+          "seed": 20260829
+        },
+        "historical_onoff_freeze_text_erratum": "CF12 actual r16/betas(.9,.95), not old ONOFF freeze's r8/(.9,.999)",
+        "lora_alpha": 32,
+        "lora_dropout": 0.05,
+        "lora_rank": 16,
+        "lr_schedule": "u<4: peak*(u+1)/4; else peak*(.1+.9*(1+cos(pi*(u-4)/95))/2); set before optimizer.step",
+        "model_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+        "normalization": "sum shifted response CE / block active tokens; clip=1; B/S streams; B-before-G; no dummy forwards",
+        "optimizer": {
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "eps": 1e-08,
+          "foreach": false,
+          "fused": false,
+          "lr": 0.0002,
+          "name": "AdamW",
+          "weight_decay": 0
+        },
+        "precision": "BF16 base / FP32 adapter",
+        "scoring": {
+          "address_space_bytes": 4294967296,
+          "backend": "chroot_seccomp",
+          "credentials_mounted": false,
+          "model_mounted": false,
+          "network": "seccomp_denied",
+          "outer_timeout_seconds": 180,
+          "process_limit": 64,
+          "workspace_mounted": false
+        }
+      },
+      "software_versions": {
+        "numpy": "2.1.2",
+        "peft": "0.18.1",
+        "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+        "torch": "2.9.1+cu130",
+        "transformers": "5.3.0"
+      },
+      "bindings": {
+        "cf12_freeze_sha256": "654e4d2ff0f456412cac1a2e498522ae6d308d802755e242104211e52399694b",
+        "design_receipt_sha256": "43fcb24b64758f0799802dad2471f7178b561469ae1e4d120fd3eef52d69b2fe",
+        "design_sha256": "866ea162f2afca6e0e76dd5c40a3bcd6cafeda04118ba9c58f88e6f3a9847a03",
+        "evaluator_archive_sha256": "d11dc64dfee6858a52c493466aa91a7bd0e3d50deda9a586144c1ba127c0e869",
+        "evaluator_revision": "26d6d00bb1fd0fa37f39c99d5290da67891d1c5e",
+        "humaneval_compressed_sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+        "humaneval_logical_sha256": "42526ec0e7d5f3ee0b06d6ced98f8c8bae3d76519151bfb3d36f79010645bd7f",
+        "model_revision": "8faed761d45a263340a0528343f099c05c9a4323",
+        "msep_freeze_sha256": "7cc5e77850e3d85fc37b3fd205d576b04a35a4938425aab67729f4505dface18",
+        "onoff_freeze_sha256": "2f501a9d4ee5e84e1da852065f44438c270d7d5057855e86243ae457cee33866",
+        "prospective_freeze_sha256": "8451f8ea678133f1833d4b63bb191c8eb12b034e1fd6ea53d69fba26053ac82b"
+      }
+    }
+  },
+  "limitations": "Only selected frozen metadata; token plans, machine acceptance, initial tensors and local paths are not distributed. No experiment was run to create this file."
+}
